@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="312.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.astemir.core.gui.MainController">
+   <children>
+      <Button fx:id="selectArt" layoutX="305.0" layoutY="168.0" mnemonicParsing="false" onAction="#onSelectArt" prefHeight="35.0" prefWidth="90.0" text="Выбрать арт" />
+      <MenuButton fx:id="selectScale" layoutX="305.0" layoutY="253.0" mnemonicParsing="false" text="DEFAULT" />
+      <CheckBox fx:id="realismCheckbox" layoutX="305.0" layoutY="113.0" mnemonicParsing="false" text="Реализм Мод" />
+      <TextField fx:id="delayInput" layoutX="305.0" layoutY="41.0" prefHeight="26.0" prefWidth="102.0" promptText="Задержка" />
+      <TextField fx:id="simplifyInput" layoutX="305.0" layoutY="77.0" prefHeight="26.0" prefWidth="102.0" promptText="Упрощение" />
+      <Canvas fx:id="imagePanel" height="256.0" layoutX="20.0" layoutY="31.0" width="256.0" />
+      <CheckBox fx:id="useBinds" layoutX="305.0" layoutY="138.0" mnemonicParsing="false" text="Бинды" />
+      <Button fx:id="updateButton" layoutX="305.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Обновить" onAction="#onClickUpdate"/>
+   </children>
+</AnchorPane>
